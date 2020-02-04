@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SpaceX with brand new space programs. Contact Us today!" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <title>SpaceX Contact Us with questions</title>
+</head>
+
+<body>
+    <div class="header-other">
+
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html" class="brand-title">Space x events</a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="navbar-links">
+                <ul>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <li class="link"><a href="event.html">Event</a></li>
+                    <li class="link active"><a href="contact.html">Contact Us</a></li>
+                    <li class="link"><a href="gallery.html">Gallery</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container-contact">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h1 class="contactHeading">Contact Us</h1>
+            </div>
+
+            <div id="moreInfoTrigger">
+
+                <button class="moreInfo" onclick="toggle()">By contacting us online you agree to SpaceX's
+                    terms of service and privacy policy. <span class="linkContact">Click here for more
+                        info.</span></button>
+
+
+
+                <div id="moreInfoContent" style="display: none">
+
+                    <p>Of course, we abide by the applicable privacy policy and will never pass
+                        your information on to a third party.</p>
+                    <p>We are allowed to contact you via email or phonenumber, with offers, discounts and events.</p>
+                </div>
+            </div>
+
+            <div id="message" class="error">
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="contactForm">
+
+                <div class="col">
+                    <br>Name: <br>
+                    <input type="text" name="firstName" id="firstName">
+                    <span class="error" id="firstNameError">This field cannot be blank</span>
+                </div>
+
+                <div class="col">
+                    <br>Last Name: <br>
+                    <input type="text" name="lastName" id="lastName">
+                    <span class="error" id="lastNameError">This field cannot be blank</span>
+                </div>
+
+                <div class="col">
+                    <br>Telephone: <br>
+                    <input type="number" name="phone" id="phone">
+                    <span class="error" id="phoneError">Please enter a correct phone number</span>
+                </div>
+
+                <div class="col">
+                    <br>Email: <br>
+                    <input type="email" name="email" id="email">
+                    <span class="error" id="emailError">Please enter a correct email address</span>
+                </div>
+
+                <div class="col">
+                    <br>How can we help? <br>
+                    <textarea input type="textarea" name="comment" id="details"></textarea>
+                    <span class="error" id="messageError">Please enter your message</span>
+                </div>
+
+                <div class="col">
+                    <p id="validation-passed-message">Thank you! Please check your email.</p>
+                    <p id="validation-false">Please check your input.</p>
+                </div>
+
+                <div class="col">
+
+                    <button id="submitContact" class="submitContact" type="submit">
+                        <p>Send</p>
+                        <p class="sendButton" aria-hidden="true"></p>
+                    </button>
+
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="contactSidebar">
+        <h2 class="contactSidebarHeading">Other contact</h2>
+        <p class="address">Rocket Road Hawthorne, California</p>
+        <p class="phoneNumber">310-363-6000</p>
+        <p>spacex@events.com</p>
+        <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
+            come see us today!</p>
+        <a href="event.html"><span class="linkContact">Find out more here.</span></a>
+
+    </div>
+
+    <footer>
+
+        <div class="row">
+
+            <div class="column">
+                <h3 class="footerHeading">Find us</h3>
+                <p class="address">Rocket Road Hawthorne, California</p>
+                <p class="phoneNumber">310-363-6000</p>
+                <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
+                    come see us today!</p>
+                <a href="event.html">Find out more here.</a>
+            </div>
+
+            <div class="column">
+                <h3 class="footerHeading">Navigate</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="footer-container">
+                    © 2020 space x events group
+                </div>
+            </div>
+            <button id="topButton" class="topButton" type="button" title="Go to top"><i class="arrow up"></i></button>
+    </footer>
+
+
+    <script src="/scripts/contact.js"></script>
+
+</body>
+
+</html>
