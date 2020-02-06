@@ -330,40 +330,107 @@ font-size: 0.8em;
 text-transform: initial;
 }
 .contactHeading{
-     color: #00446e;
-     font-size: 3.5em;
-     text-transform: uppercase;
-     text-align: center;
-     letter-spacing: 0.1em;
+color: #00446e;
+font-size: 3.5em;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.1em;
 }
 
 /*Gallery Page  -------------------------------------------------------------------------------------------*/
-.galleryHeading{
-  margin-left: 1vw;
+.gallery{
+margin: 1em;
 }
-
-
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columnGallery {
+float: left;
+background-color: #FFFFFF;
+margin: 2em;
+padding: 1em;
+width: 45%;
+height: 50%;
+text-align: center;
+box-shadow: 0 1em 3em  0 rgba(0,0,0,.15);
+-moz-box-shadow: 0 1em 3em  0 rgba(0,0,0,.15);
+-webkit-box-shadow: 0 1em 3em  0 rgba(0,0,0,.15);
+-o-box-shadow: 0 1em 3em  0 rgba(0,0,0,.15);
+}
+.image-name{
+display: inline;
+color: #00446e;
+font-family:  'Roboto', sans-serif;
+text-transform: uppercase;
+font-size: 2em;
+padding: 1em;
+}
+.description{
+font-size: 1.5em;
+}
+.gallery img{
+width: 100%;
+padding: 1em;
+cursor: pointer;
+transition: 1s;
+}
+.gallery img:hover{
+opacity: 0.8;
+}
+.btnGallery {
+border: none;
+outline: none;
+padding: 1.5em;
+width: 15%;
+font-size: 1em;
+margin-top: 1em;
+margin-left: 2em;
+background-color: #FAFAFA;
+cursor: pointer;
+}
+.btnGallery:hover {
+background: #00446e;
+color: #ffffff;
+}
+.btnGallery.active {
+background: #00446e;
+color: #ffffff;
+}
+/*Gallery page - bigger image display -------------------------------------------------------------------------------------------*/
+.containerDisplay {
+position: fixed;
+z-index: 1;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+bottom:0;
+right:0;
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+}
+.containerDisplay img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5%;
+width: 70%;
+}
+.galleryCloseBtn {
+position: absolute;
+right: 1em;
+top: 1em;
+color: #FFFFFF;
+font-size: 3.5em;
+cursor: pointer;
+}
+.galleryCloseBtn:hover {
+color: #F07366;
+}
 /*Event Page  -------------------------------------------------------------------------------------------*/
-.btn {
-  position: relative;
-  font-size: 1em;
-  top: 2vw;
-  left: 3vw;
-  border: none;
-  outline: none;
-  padding: 10px;
-  background-color: #bbbbbb;
-  cursor: pointer;
-}
 
-.btn:hover {
-  background-color: #dddddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 .content-container {
   width: 80%;
   max-width: 100%;

@@ -40,7 +40,7 @@
     <div class="container-contact">
         <div class="row">
 
-            <div class="col-sm-12">
+            <div class="heading">
                 <h1 class="contactHeading">Contact Us</h1>
             </div>
 
@@ -67,42 +67,42 @@
         <div class="row">
             <form id="contactForm">
 
-                <div class="col">
-                    <br>Name: <br>
+                <div class="inputColumn">
+                    <p>Name: </p>
                     <input type="text" name="firstName" id="firstName">
                     <span class="error" id="firstNameError">This field cannot be blank</span>
                 </div>
 
-                <div class="col">
-                    <br>Last Name: <br>
+                <div class="inputColumn">
+                    <p>Last Name: </p>
                     <input type="text" name="lastName" id="lastName">
                     <span class="error" id="lastNameError">This field cannot be blank</span>
                 </div>
 
-                <div class="col">
-                    <br>Telephone: <br>
+                <div class="inputColumn">
+                    <p>Telephone: </p>
                     <input type="number" name="phone" id="phone">
                     <span class="error" id="phoneError">Please enter a correct phone number</span>
                 </div>
 
-                <div class="col">
-                    <br>Email: <br>
+                <div class="inputColumn">
+                    <p>Email: </p>
                     <input type="email" name="email" id="email">
                     <span class="error" id="emailError">Please enter a correct email address</span>
                 </div>
 
-                <div class="col">
-                    <br>How can we help? <br>
+                <div class="inputColumn">
+                    <p>How can we help? </p>
                     <textarea input type="textarea" name="comment" id="details"></textarea>
                     <span class="error" id="messageError">Please enter your message</span>
                 </div>
 
-                <div class="col">
+                <div class="inputColumn">
                     <p id="validation-passed-message">Thank you! Please check your email.</p>
                     <p id="validation-false">Please check your input.</p>
                 </div>
 
-                <div class="col">
+                <div class="inputColumn">
 
                     <button id="submitContact" class="submitContact" type="submit">
                         <p>Send</p>
@@ -117,12 +117,15 @@
     </div>
 
     <div class="contactSidebar">
+
         <h2 class="contactSidebarHeading">Other contact</h2>
+
         <p class="address">Rocket Road Hawthorne, California</p>
         <p class="phoneNumber">310-363-6000</p>
         <p>spacex@events.com</p>
         <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
             come see us today!</p>
+
         <a href="event.html"><span class="linkContact">Find out more here.</span></a>
 
     </div>
