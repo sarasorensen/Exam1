@@ -17,7 +17,7 @@
 
         <nav class="navbar" id="navbar">
 
-            <a href="index.html" class="brand-title">Space Events</a>
+            <a href="index.html" class="brand-title">Space x events</a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -28,7 +28,7 @@
             <div class="navbar-links">
                 <ul>
                     <li class="link"><a href="index.html">Home</a></li>
-                    <li class="link"><a href="event.html">Events</a></li>
+                    <li class="link"><a href="event.html">Event</a></li>
                     <li class="link"><a href="contact.html">Contact Us</a></li>
                     <li class="link active"><a href="gallery.html">Gallery</a></li>
 
@@ -42,7 +42,8 @@
         <button class="btnGallery" onclick="filterImages('all')"> Show all</button>
         <button class="btnGallery" onclick="filterImages('firstRe-FLight')"> First Re-FLight</button>
         <button class="btnGallery" onclick="filterImages('39ALAUNCH')"> 39A Launch</button>
-        <button class="btnGallery" onclick="filterImages('spaceships')"> spaceship</button>
+        <button class="btnGallery" onclick="filterImages('falcon9')"> Falcon 9</button>
+        <button class="btnGallery" onclick="filterImages('video')"> Video</button>
     </div>
 
     <div class="containerDisplay">
@@ -58,50 +59,51 @@
         </div>
     </div>
 
+    <div class="videoContainer">
+        <iframe class="video" type="video" src="https://www.youtube.com/embed/1KmBDCiL7MU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+        <div id="mission">
+
+        </div>
+    </div>
 
     <footer>
 
         <div class="row">
 
             <div class="column">
-
-                <p><span class="bold">Address:</span> Road Hawthorne, California</p>
-                <p><span class="bold">Telephone:</span> 310-363-6000</p>
-                <p><span class="bold">Email:</span> spacevents@events.com</p>
-
-                <p class="infoLink">To see what else we are up to, visit:</p>
-                <a href="https://www.spacex.com/">SpaceX.com</a>
+                <h3 class="footerHeading">Find us</h3>
+                <p class="address">Rocket Road Hawthorne, California</p>
+                <p class="phoneNumber">310-363-6000</p>
+                <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
+                    come see us today!</p>
+                <a href="event.html">Find out more here.</a>
             </div>
 
             <div class="column2">
-                <img class="rocketImg" src="/images/1x/rocketpicture.png" alt="Picture of an animated rocket">
+                <h3 class="footerHeading">Navigate</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column3">
+                <h3 class="footerHeading">Find More</h3>
+                <p>To see what else we are up to, visit:</p>
+                <a href="https://www.spacex.com/">SpaceX.com</a>
             </div>
 
-        </div>
-
-        <div class="column3">
-            <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
-        </div>
-
-        <div class="footer-container">
-
-
-
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
+            <div class="footer-copyright">
+                <div class="footer-container">
+                    © 2020 space x events group
+                </div>
             </div>
-
-        </div>
-
-        <div class="footer-copyright">
-            © 2020 Space Events group
-        </div>
+            <button id="topButton" class="topButton" type="button" title="Go to top"><i class="arrow up"></i></button>
     </footer>
 
     <script src="/scripts/gallery.js"></script>
