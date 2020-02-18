@@ -16,7 +16,7 @@
 
         <nav class="navbar" id="navbar">
 
-            <a href="index.html" class="brand-title">Space x events</a>
+            <a href="index.html" class="brand-title">Space Events</a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,7 +27,7 @@
             <div class="navbar-links">
                 <ul>
                     <li class="link"><a href="index.html">Home</a></li>
-                    <li class="link"><a href="event.html">Event</a></li>
+                    <li class="link"><a href="event.html">Events</a></li>
                     <li class="link active"><a href="contact.html">Contact Us</a></li>
                     <li class="link"><a href="gallery.html">Gallery</a></li>
 
@@ -40,23 +40,29 @@
     <div class="container-contact">
         <div class="row">
 
-            <div class="col-sm-12">
+            <div class="heading">
                 <h1 class="contactHeading">Contact Us</h1>
             </div>
 
             <div id="moreInfoTrigger">
 
-                <button class="moreInfo" onclick="toggle()">By contacting us online you agree to SpaceX's
-                    terms of service and privacy policy. <span class="linkContact">Click here for more
-                        info.</span></button>
-
-
+                <p>By contacting us online you agree to SpaceX Events terms of service and privacy policy.</p>
+                <button class="moreInfo" onclick="toggle()">Click here for more information.</button>
 
                 <div id="moreInfoContent" style="display: none">
 
                     <p>Of course, we abide by the applicable privacy policy and will never pass
                         your information on to a third party.</p>
-                    <p>We are allowed to contact you via email or phonenumber, with offers, discounts and events.</p>
+                    <p>We are allowed however to save the information you send us such as name, number, email, and
+                        questions if needed. We can contact you via this information by email or phonenumber, with
+                        offers, discounts and
+                        events.</p>
+
+                    <p>We will never contact you to get your personal information such as card information, pin codes
+                        etc. Never pass on this information to us.</p>
+                    <p>If you are under 13 of age, please get a parent to contact us for you, as we do not knowingly
+                        collect information from persons under 13 of age. If you don't have anyone that can contact us
+                        for you, please see our other contact information to the right or below.</p>
                 </div>
             </div>
 
@@ -67,46 +73,46 @@
         <div class="row">
             <form id="contactForm">
 
-                <div class="col">
-                    <br>Name: <br>
+                <div class="inputColumn">
+                    <p>Name: </p>
                     <input type="text" name="firstName" id="firstName">
                     <span class="error" id="firstNameError">This field cannot be blank</span>
                 </div>
 
-                <div class="col">
-                    <br>Last Name: <br>
+                <div class="inputColumn">
+                    <p>Last Name: </p>
                     <input type="text" name="lastName" id="lastName">
                     <span class="error" id="lastNameError">This field cannot be blank</span>
                 </div>
 
-                <div class="col">
-                    <br>Telephone: <br>
+                <div class="inputColumn">
+                    <p>Telephone: </p>
                     <input type="number" name="phone" id="phone">
                     <span class="error" id="phoneError">Please enter a correct phone number</span>
                 </div>
 
-                <div class="col">
-                    <br>Email: <br>
+                <div class="inputColumn">
+                    <p>Email: </p>
                     <input type="email" name="email" id="email">
                     <span class="error" id="emailError">Please enter a correct email address</span>
                 </div>
 
-                <div class="col">
-                    <br>How can we help? <br>
-                    <textarea input type="textarea" name="comment" id="details"></textarea>
+                <div class="inputColumn">
+                    <p>How can we help? </p>
+                    <textarea input type="text" name="comment" id="details"></textarea>
                     <span class="error" id="messageError">Please enter your message</span>
                 </div>
 
-                <div class="col">
+                <div class="inputColumn">
                     <p id="validation-passed-message">Thank you! Please check your email.</p>
                     <p id="validation-false">Please check your input.</p>
                 </div>
 
-                <div class="col">
+                <div class="inputColumn">
 
                     <button id="submitContact" class="submitContact" type="submit">
-                        <p>Send</p>
-                        <p class="sendButton" aria-hidden="true"></p>
+                        Send
+
                     </button>
 
 
@@ -117,13 +123,16 @@
     </div>
 
     <div class="contactSidebar">
+
         <h2 class="contactSidebarHeading">Other contact</h2>
+
         <p class="address">Rocket Road Hawthorne, California</p>
         <p class="phoneNumber">310-363-6000</p>
         <p>spacex@events.com</p>
         <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
             come see us today!</p>
-        <a href="event.html"><span class="linkContact">Find out more here.</span></a>
+
+        <a href="event.html"><span class="linkContact">See our events here.</span></a>
 
     </div>
 
@@ -132,32 +141,47 @@
         <div class="row">
 
             <div class="column">
-                <h3 class="footerHeading">Find us</h3>
-                <p class="address">Rocket Road Hawthorne, California</p>
-                <p class="phoneNumber">310-363-6000</p>
-                <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
-                    come see us today!</p>
-                <a href="event.html">Find out more here.</a>
+
+                <p><span class="bold">Address:</span> Road Hawthorne, California</p>
+                <p><span class="bold">Telephone:</span> 310-363-6000</p>
+                <p><span class="bold">Email:</span> spacevents@events.com</p>
+
+                <p class="infoLink">To see what else we are up to, visit:</p>
+                <a href="https://www.spacex.com/">SpaceX.com</a>
             </div>
 
-            <div class="column">
-                <h3 class="footerHeading">Navigate</h3>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="event.html">Event</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
+            <div class="column2">
+                <img class="rocketImg" src="/images/1x/rocketpicture.png" alt="Picture of an animated rocket">
             </div>
 
-            <div class="footer-copyright">
-                <div class="footer-container">
-                    © 2020 space x events group
-                </div>
+        </div>
+
+        <div class="column3">
+            <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
+        </div>
+
+        <div class="footer-container">
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
             </div>
-            <button id="topButton" class="topButton" type="button" title="Go to top"><i class="arrow up"></i></button>
+
+        </div>
+
+
+
+
+
+        </div>
+
+        <div class="footer-copyright">
+            © 2020 Space Events group
+        </div>
     </footer>
 
 
