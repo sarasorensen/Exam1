@@ -9,39 +9,52 @@ toggleButton.addEventListener('click', () => {
 //filter and display images
 var images = [
     {
-        title: "Free flying Spacecraft",
+        title: "flying man",
         imageUrl:
-            "/images/spacecraft.jpg",
-        description: "Picture of a flying spacecraft, also known as a dragon.",
-        type: "39ALAUNCH",
+            "images/working.jpg",
+        alt: "An astronaut working in space.",
+        type: "astronaut"
     },
     {
-        title: "droneship back at port",
+        title: "the crafter",
         imageUrl:
-            "/images/craftSpace.jpg",
-        description: "Picture of a spacecraft by the ocean being worked on.",
-        type: "firstRe-FLight",
+            "images/craftSpace.jpg",
+        alt: "A spaceship being worked on.",
+        type: "spaceships"
     },
     {
-        title: "spaceship in the hangar",
+        title: "the insider",
         imageUrl:
-            "/images/insideCraft.jpg",
-        description: "Picture of a spacecraft laying on it's side inside a building.",
-        type: "firstRe-FLight",
+            "images/insideCraft.jpg",
+        alt: "A spacecraft laying inside.",
+        type: "firstRe-FLight"
+    },
+    {
+        title: "the star",
+        imageUrl:
+            "images/stars.jpg",
+        alt: "A spacecraft creating a shooting star.",
+        type: "firstRe-FLight"
     },
     {
         title: "the spaceship",
         imageUrl:
-            "/images/rocket.jpg",
-        description: "Picture of a spacecraft outside ready for take off.",
+            "images/rocket.jpg",
+        alt: "A spacecraft ready for take off.",
         type: "spaceships"
+    },
+    {
+        title: "the american",
+        imageUrl:
+            "images/astronaut.jpg",
+        alt: "An astronaut in space above earth.",
+        type: "astronaut"
     }
 
 ];
 
 
-//filter
-
+//display images 
 var filteredImages = images;
 
 var imageContainer = document.querySelector("#gallery");
@@ -52,13 +65,19 @@ function renderImages() {
 
     imageContainer.innerHTML = "";
 
+
     filteredImages.forEach(function (image) {
+
+        var imageSrc = "/images/1x/errorimage.png";
+        if (image.imageUrl !== undefined) {
+            imageSrc = image.imageUrl;
+        }
 
         imageContainer.innerHTML += `
         <div class="columnGallery">
-        <img onclick="displayImage(this);" class="image-picture" src="${image.imageUrl}"</img>
+        <img onclick="displayImage(this);"  class="image-picture" src="${imageSrc}"</img>
         <h2 class="image-name">${image.title}</h2>
-        <p class="description" >${image.description}</p>
+        <p class="alt" >${image.alt}</p>
         </div>`;
     });
 }
@@ -67,6 +86,8 @@ function renderImages() {
 renderImages();
 
 
+
+//filter type 
 function filterImages(type) {
     filteredImages = images.filter(function (image) {
         if (type === "all") {
@@ -81,6 +102,7 @@ function filterImages(type) {
     renderImages();
 
 }
+
 
 // Add active class to the current button
 var btnContainer = document.getElementById("galleryBtnContainer");

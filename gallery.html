@@ -4,20 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SpaceX with brand new space programs. See our gallery today!" />
+    <meta name="description" content="Space Events with brand new space programs. See our gallery today!" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stylesheet.css" />
-    <title>SpaceX Gallery</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Space Events Gallery</title>
 </head>
 
 <body>
 
-
-    <div class="header-other">
+    <header>
 
         <nav class="navbar" id="navbar">
 
-            <a href="index.html" class="brand-title">Space Events</a>
+            <a href="index.html"><img class="brand-title" src="images/logohdpi.png" alt="company logo space events"></a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,76 +34,66 @@
                 </ul>
             </div>
         </nav>
-    </div>
-
-
-    <div id="galleryBtnContainer">
-        <button class="btnGallery" onclick="filterImages('all')"> Show all</button>
-        <button class="btnGallery" onclick="filterImages('firstRe-FLight')"> First Re-FLight</button>
-        <button class="btnGallery" onclick="filterImages('39ALAUNCH')"> 39A Launch</button>
-        <button class="btnGallery" onclick="filterImages('spaceships')"> spaceship</button>
-    </div>
+    </header>
 
     <div class="containerDisplay">
         <span onclick="this.parentElement.style.display='none'" class="galleryCloseBtn">&times;</span>
-        <img id="biggerImageDisplay">
+        <img src="#" alt="" id="biggerImageDisplay">
     </div>
 
+    <div class="eventsRow">
 
-    <div id="gallery" class="gallery">
-        <div class="columnGallery">
+        <section class="galleryBtnContainer" id="galleryBtnContainer">
+
+            <h1 class="galleryH">Media Gallery</h1>
+            <button class="btnGallery" onclick="filterImages('all')"> Show all</button>
+            <button class="btnGallery" onclick="filterImages('firstRe-FLight')"> First Re-FLight</button>
+            <button class="btnGallery" onclick="filterImages('astronaut')"> astronaut</button>
+            <button class="btnGallery" onclick="filterImages('spaceships')"> spaceship</button>
+        </section>
 
 
-        </div>
+        <section id="gallery" class="gallery">
+            <div class="columnGallery">
+
+
+            </div>
+        </section>
     </div>
-
 
 
     <footer>
 
         <div class="row">
 
+            <section class="footer-top">
+                <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
+            </section>
+
             <div class="column">
-
-                <p><span class="bold">Address:</span> Road Hawthorne, California</p>
-                <p><span class="bold">Telephone:</span> 310-363-6000</p>
-                <p><span class="bold">Email:</span> spacevents@events.com</p>
-
-                <p class="infoLink">To see what else we are up to, visit:</p>
-                <a href="https://www.spacex.com/">SpaceX.com</a>
+                <a href="index.html"><img class="brand-title-footer" src="images/logohdpi.png"
+                        alt="company logo space events"></a>
             </div>
 
-            <div class="column2">
-                <img class="rocketImg" src="/images/1x/rocketpicture.png" alt="Picture of an animated rocket">
-            </div>
-
+            <section class="footer-container">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
-        <div class="column3">
-            <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
-        </div>
-
-        <div class="footer-container">
-
-
-
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="event.html">Events</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="footer-copyright">
-            © 2020 Space Events group
-        </div>
+        <section class="footer-copyright">
+            <p class="copyright">© 2020 Space Events group</p>
+            <p class="design"> Web design by Sara Sørensen</p>
+        </section>
     </footer>
 
-    <script src="/scripts/gallery.js"></script>
+    <script src="scripts/gallery.js"></script>
 
 </body>
 

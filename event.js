@@ -1,5 +1,3 @@
-
-
 //Menu for media queries
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
@@ -25,16 +23,20 @@ function topButtonFunction() {
 //filter and display dates
 var events = [
     {
-        title: "Feb. 9/10 - Atlas 5 Solar Orbiter",
-        launch: "0403 - 0603 GMT on 10th(15:00p.m.- 16:00 a.m.EST on 9th / 10th)",
+        title: "Feb. 9/10 - Atlas 5",
+        launch: "0403 - 0603 GMT on 10th (15:00p.m.- 16:00 a.m.EST on 9th / 10th)",
         site: "SLC-41, Cape Canaveral Air Force Station, California",
+        imageUrl:
+            "images/delta.jpg",
         info: "A United Launch Alliance Atlas 5 rocket, designated AV-087, will launch the Solar Orbiter spacecraft for NASA and the European Space Agency.",
-        type: "feb",
+        type: "mar",
     },
     {
         title: "Feb. 15 - Starlink 4",
         launch: "0403-0603 GMT on 10th (11:03p.m.- 1: 03 a.m.EST on 9th / 10th)",
         site: "SLC-41, Cape Canaveral Air Force Station, Florida",
+        imageUrl:
+            "images/starship.png",
         info: "A United Launch Alliance Atlas 5 rocket, designated AV-087, will launch the Solar Orbiter spacecraft for NASA and the European Space Agency.",
         type: "feb",
     },
@@ -42,15 +44,19 @@ var events = [
         title: "Mar. 2 - Falcon 9 SpaceX CRS 20",
         launch: "00403-0603 GMT on 10th (18:09p.m.- 20:00 a.m.)",
         site: "SLC-41, Cape Canaveral Air Force Station, Texas",
+        imageUrl:
+            "images/ariane.jpg",
         info: "A United Launch Alliance Atlas 5 rocket, designated AV-087, will launch the Solar Orbiter spacecraft for NASA and the European Space Agency.",
         type: "mar",
     },
     {
-        title: "Mar. 9/10 - Atlas 5",
+        title: "Mar. 9/10 - Atlas 5 Solar Orbiter",
         launch: "0403-0603 GMT on 10th (00:03p.m.- 3:06 a.m.)",
         site: "SLC-41, Cape Canaveral Air Force Station, Florida",
+        imageUrl:
+            "images/spacecraft.jpg",
         info: "A United Launch Alliance Atlas 5 rocket, designated AV-087, will launch the Solar Orbiter spacecraft for NASA and the European Space Agency.",
-        type: "mar",
+        type: "feb",
     }
 
 ];
@@ -58,7 +64,7 @@ var events = [
 
 //display events
 
-var filteredEvents = events;
+var displayedEvents = events;
 
 var container = document.querySelector("#container");
 
@@ -68,13 +74,14 @@ function renderEvents() {
 
     container.innerHTML = "";
 
-    filteredEvents.forEach(function (event) {
+    displayedEvents.forEach(function (event) {
 
         container.innerHTML += `
         <div class="scheduleContent">
         <div class="titleBox"> 
         <p class="eventTitle">${event.title}
         </div>
+        <img class="image" src="${event.imageUrl}"</img>
         <p class="launchTime">${event.launch}</p>
         <p class="launchSite" >${event.site}</p>
         <p class="launchInfo">${event.info}</p>
@@ -86,44 +93,5 @@ renderEvents();
 
 
 
-function filterEvents(type) {
-
-    filteredEvents = events.filter(function (event) {
-        if (type === "all") {
-            return true;
-        }
-        if (event.type === type) {
-
-            return true;
-        }
-
-    })
-
-    renderEvents();
-
-}
-
-
-
-//Toggle mennu
-function toggleMenu() {
-    document.getElementById("menuDropDown").classList.toggle("showContent");
-}
-
-// Add active class to the current button
-var btnContainer = document.getElementById("menuDropDown");
-var btns = btnContainer.getElementsByClassName("btnFilter");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.querySelector(".btnFilter.active");
-
-        if (current) {
-            current.className = current.className.replace(" active", "");
-        }
-        this.className += " active";
-
-    });
-}
 
 
