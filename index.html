@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SpaceX with brand new space programs. Find out more!" />
+    <meta name="description" content="Space Events with live rocket launches, gallery and a timeline. Find out more!" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stylesheet.css" />
-    <title>SpaceX Homepage</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Space Events Homepage</title>
 </head>
 
 <body>
 
-    <div class="header">
+    <header>
 
         <nav class="navbar" id="navbar">
 
-            <a href="index.html" class="brand-title">Space x events</a>
+            <a href="index.html"><img class="brand-title" src="images/logohdpi.png" alt="company logo space events"></a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,62 +27,129 @@
             <div class="navbar-links">
                 <ul>
                     <li class="link active"><a href="index.html">Home</a></li>
-                    <li class="link"><a href="event.html">Event</a></li>
+                    <li class="link"><a href="event.html">Events</a></li>
                     <li class="link"><a href="contact.html">Contact Us</a></li>
                     <li class="link"><a href="gallery.html">Gallery</a></li>
 
                 </ul>
             </div>
         </nav>
+    </header>
+
+    <section class="topCol">
+        <h1 class="indexH">Meet the future of space travel</h1>
+        <a href="event.html" class="btnIndex" role="button">explore</a>
+    </section>
+
+    <div class="eventsRow">
+
+        <section class="col">
+            <article>
+                <h2 class="colHeading">Anyone up there?</h2>
+                <div class="astros" id="astros">
+
+                </div>
+
+                <div class="location" id="location">
+
+                </div>
+
+                <h3 class="colHeading">Previous missions</h3>
+
+                <h3 class="locationHeading">Delta 4 launch</h3>
+                <p>The final Delta 4 Medium rocket lifts off from Cape Canaveral Air Force Station on August 22, 2019,
+                    carrying into orbit
+                    the U.S. Air Force’s GPS 3 SV02 navigation satellite.</p>
+                <img class="columnImg" src="images/delta.jpg" alt="Delta 4 rocket launch">
+
+                <h3 class="locationHeading">Ariane 5</h3>
+                <p>A European Ariane 5 rocket fired into a gloomy sky, Thursday over French Guiana and streaked into
+                    space
+                    from the tropical
+                    launch base with 2.9 million pounds of thrust from two solid rocket boosters and a hydrogen-fueled
+                    Vulcain 2 main
+                    engine.</p>
+                <img class="columnImg" src="images/ariane.jpg" alt="Ariane rocket launch">
+            </article>
+        </section>
+
+
+        <section class="videoContainer">
+
+            <h2 class="videoHeading">Starlink Mission</h2>
+            <button id="button" class="contentVideo">Watch live feed</button>
+
+            <div id="contentIndex">
+                <iframe id="video" class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/1KmBDCiL7MU" style="border:0;"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div id="mission">
+                </div>
+
+        </section>
+
+        <section class="questionsContainer">
+            <article>
+                <h2 class="questionsHeading">Need help?</h2>
+
+                <p class="questionInfo">Space activity experts at your service!</p>
+
+                <img class="roundPicture" src="images/space-working.jpg" alt="Man working in space">
+
+                <img class="iconGuide" src="images/1x/guide.png" alt="Icon of a hand holding a book">
+                <p class="iconText">Ask us anything</p>
+
+                <img class="iconRocket" src="images/1x/rocket.png" alt="Icon of a rocket">
+                <p class="iconText">Educated Experts</p>
+
+                <img class="iconBook" src="images/1x/book.png" alt="Icon of a book">
+                <p class="iconText">Learn about space activity</p>
+
+                <img class="icon24" src="images/1x/247.png" alt="Icon of 24/7 sign">
+                <p class="iconText">Reach us 24/7</p>
+
+            </article>
+            <form action="contact.html">
+                <button class="contactBottom">Contact us</button>
+            </form>
+
+        </section>
+
+
     </div>
-
-    <div class="cover-text">
-
-        <h2 class="cover-heading"><a href="event.html">Space x events</a></h2>
-        <p class="cover-paragraph"><a href="event.html">Learn and experience about space program activity around the
-                world! </a></p>
-
-        <a href="event.html" class="eventButton">Our Event</a>
-        <a href="gallery.html" class="galleryButton">Our Gallery</a>
-
-    </div>
-
-
 
     <footer>
 
         <div class="row">
 
-            <div class="column">
-                <h3 class="footerHeading">Find us</h3>
-                <p class="address">Rocket Road Hawthorne, California</p>
-                <p class="phoneNumber">310-363-6000</p>
-                <p>SpaceX Events has gained worldwide attention for a series of historic milestones. Don't miss out,
-                    come see us today!</p>
-                <a href="event.html">Find out more here.</a>
-            </div>
+            <section class="footer-top">
+                <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
+            </section>
 
             <div class="column">
-                <h3 class="footerHeading">Navigate</h3>
+                <a href="index.html"><img class="brand-title-footer" src="images/logohdpi.png"
+                        alt="company logo space events"></a>
+            </div>
+
+            <section class="footer-container">
                 <div class="footer-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="event.html">Event</a></li>
+                        <li><a href="event.html">Events</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-            </div>
+            </section>
+        </div>
 
-            <div class="footer-copyright">
-                <div class="footer-container">
-                    © 2020 space x events group
-                </div>
-            </div>
-            <button id="topButton" class="topButton" type="button" title="Go to top"><i class="arrow up"></i></button>
+        <section class="footer-copyright">
+            <p class="copyright">© 2020 Space Events group</p>
+            <p class="design"> Web design by Sara Sørensen</p>
+        </section>
     </footer>
-
-    <script src="/scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
 

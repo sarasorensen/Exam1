@@ -1,3 +1,4 @@
+
 //validate membership form
 var contactForm = document.getElementById("contactForm");
 var message = document.getElementById("message");
