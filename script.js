@@ -6,7 +6,6 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
-
 //API for people in space
 fetch("http://api.open-notify.org/astros.json")
     .then(function (response) {

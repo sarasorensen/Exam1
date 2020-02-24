@@ -75,7 +75,7 @@ function renderImages() {
 
         imageContainer.innerHTML += `
         <div class="columnGallery">
-        <img onclick="displayImage(this);"  class="image-picture" src="${imageSrc}"</img>
+        <img onclick="displayImage(this);" alt="Column pictures of rockets, austronauts and shooting stars" class="image-picture" src="${imageSrc}"</img>
         <h2 class="image-name">${image.title}</h2>
         <p class="alt" >${image.alt}</p>
         </div>`;
@@ -91,10 +91,12 @@ renderImages();
 function filterImages(type) {
     filteredImages = images.filter(function (image) {
         if (type === "all") {
+
             return true;
         }
 
         if (image.type === type) {
+
             return true;
         }
     });
@@ -102,8 +104,6 @@ function filterImages(type) {
     renderImages();
 
 }
-
-
 // Add active class to the current button
 var btnContainer = document.getElementById("galleryBtnContainer");
 var btns = btnContainer.getElementsByClassName("btnGallery");
@@ -126,7 +126,6 @@ function displayImage(image) {
     displayImage.src = image.src;
     displayImage.parentElement.style.display = "block";
 }
-
 
 //Back to top button
 document.getElementById("topButton").addEventListener("click", topButtonFunction);

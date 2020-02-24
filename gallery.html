@@ -43,22 +43,24 @@
 
     <div class="eventsRow">
 
+        <h1>Media Gallery</h1>
+
         <section class="galleryBtnContainer" id="galleryBtnContainer">
 
-            <h1 class="galleryH">Media Gallery</h1>
-            <button class="btnGallery" onclick="filterImages('all')"> Show all</button>
-            <button class="btnGallery" onclick="filterImages('firstRe-FLight')"> First Re-FLight</button>
+            <button class="btnGallery" onclick="filterImages('all');"> Show all</button>
+            <button class="btnGallery" onclick="filterImages('firstRe-FLight')"> First
+                Re-FLight</button>
             <button class="btnGallery" onclick="filterImages('astronaut')"> astronaut</button>
             <button class="btnGallery" onclick="filterImages('spaceships')"> spaceship</button>
         </section>
 
 
-        <section id="gallery" class="gallery">
+        <div id="gallery" class="gallery">
             <div class="columnGallery">
 
 
             </div>
-        </section>
+        </div>
     </div>
 
 
@@ -66,16 +68,16 @@
 
         <div class="row">
 
-            <section class="footer-top">
+            <div class="footer-top">
                 <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
-            </section>
+            </div>
 
             <div class="column">
                 <a href="index.html"><img class="brand-title-footer" src="images/logohdpi.png"
                         alt="company logo space events"></a>
             </div>
 
-            <section class="footer-container">
+            <div class="footer-container">
                 <div class="footer-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -84,13 +86,13 @@
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-            </section>
+            </div>
         </div>
 
-        <section class="footer-copyright">
+        <div class="footer-copyright">
             <p class="copyright">© 2020 Space Events group</p>
             <p class="design"> Web design by Sara Sørensen</p>
-        </section>
+        </div>
     </footer>
 
     <script src="scripts/gallery.js"></script>

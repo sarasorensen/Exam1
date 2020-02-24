@@ -43,15 +43,15 @@
             <div class="row">
 
                 <div class="heading">
-                    <h1 class="contactHeading">Contact Us</h1>
+                    <h1>Contact Us</h1>
                 </div>
 
-                <div id="moreInfoTrigger">
+                <div class="moreInfoTrigger" id="moreInfoTrigger">
 
                     <p>By contacting us online you agree to SpaceX Events terms of service and privacy policy.</p>
                     <button class="moreInfo" onclick="toggle()">Click here for more information.</button>
 
-                    <div id="moreInfoContent" style="display: none">
+                    <div class="moreInfoContent" id="moreInfoContent" style="display: none">
 
                         <p>Of course, we abide by the applicable privacy policy and will never pass
                             your information on to a third party.</p>
@@ -103,13 +103,14 @@
 
                     <div class="inputColumn">
                         <p>How can we help? </p>
-                        <textarea input type="text" name="comment" id="details"></textarea>
+                        <textarea name="comment" id="details"></textarea>
                         <span class="error" id="messageError">Please enter your message</span>
                     </div>
 
                     <div class="inputColumn">
-                        <p id="validation-passed-message">Thank you! Please check your email.</p>
-                        <p id="validation-false">Please check your input.</p>
+                        <p class="validation-passed-message" id="validation-passed-message">Thank you! Please check your
+                            email.</p>
+                        <p class="validation-false" id="validation-false">Please check your input.</p>
                     </div>
 
                     <div class="inputColumn">
@@ -128,20 +129,20 @@
 
         <section class="contactSidebar">
 
-            <h2 class="contactSidebarHeading">Other contact</h2>
+            <h2>Other contact</h2>
 
             <p class="address">Rocket Road Hawthorne, California</p>
             <p class="phoneNumber">310-363-6000</p>
             <p>space@events.com</p>
             <p>Space Events has gained worldwide attention for a series of historic milestones. Don't miss out!</p>
 
-            <a href="event.html"><span class="linkContact">See our events here.</span></a>
+            <a href="event.html"><span class="linkContact">See the events here.</span></a>
 
         </section>
 
         <section class="contactSocials">
 
-            <h2 class="contactSidebarHeading">Our socials</h2>
+            <h2>Our socials</h2>
             <div class="socials">
                 <ul>
                     <li><a href="https://twitter.com/spacex">Twitter</a></li>
@@ -157,16 +158,16 @@
 
         <div class="row">
 
-            <section class="footer-top">
+            <div class="footer-top">
                 <button id="topButton" class="topButton" type="button" title="Go to top">Back to top</button>
-            </section>
+            </div>
 
             <div class="column">
                 <a href="index.html"><img class="brand-title-footer" src="images/logohdpi.png"
                         alt="company logo space events"></a>
             </div>
 
-            <section class="footer-container">
+            <div class="footer-container">
                 <div class="footer-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -175,13 +176,13 @@
                         <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
-            </section>
+            </div>
         </div>
 
-        <section class="footer-copyright">
+        <div class="footer-copyright">
             <p class="copyright">© 2020 Space Events group</p>
             <p class="design"> Web design by Sara Sørensen</p>
-        </section>
+        </div>
     </footer>
 
 
