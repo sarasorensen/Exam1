@@ -1,9 +1,15 @@
+//Menu for media queries
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-//validate membership form
+toggleButton.addEventListener("click", function () {
+    navbarLinks.classList.toggle("active");
+})
+
 var contactForm = document.getElementById("contactForm");
 var message = document.getElementById("message");
 
-//Function for validating that there is input in first name 
+//Functions validating input
 function validateName(name) {
     if (name.trim().length === 0) {
         return false;
@@ -11,18 +17,16 @@ function validateName(name) {
     return true;
 }
 
-//Function for validating that there is input in last name 
 function validateLastName(lName) {
     if (lName.trim().length === 0) {
         return false;
     }
     return true;
 }
+
 function validatePhone(phone) {
     if (
-        phone.search(
-            /^(\+{1}\d{2,3}\s?[(]{1}\d{1,3}[)]{1}\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}$/
-        )
+        phone.search(/^(\+{1}\d{2,3}\s?[(]{1}\d{1,3}[)]{1}\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}$/)
     ) {
         return false;
     }
@@ -41,7 +45,6 @@ function validateDetails(details) {
         return false;
     } return true;
 }
-
 //Function for submitting contact form
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -62,14 +65,13 @@ contactForm.addEventListener("submit", function (event) {
     const phone = document.getElementById("phone");
     const email = document.getElementById("email");
 
-    // Variables for input value
     const nameValue = name.value;
     const lNameValue = lName.value;
     const detailsValue = details.value;
     const phoneValue = phone.value;
     const emailValue = email.value;
 
-    //Checks first name input, and displays error message or not 
+    //Checks input and error display
     if (validateName(nameValue)) {
         firstNameError.style.display = "none";
     }
@@ -77,9 +79,6 @@ contactForm.addEventListener("submit", function (event) {
         firstNameError.style.display = "block";
         validationPassed = false;
     }
-
-
-    //Checks last name input, and displays error or not 
     if (validateLastName(lNameValue)) {
         lastNameError.style.display = "none";
     }
@@ -87,33 +86,24 @@ contactForm.addEventListener("submit", function (event) {
         lastNameError.style.display = "block";
         validationPassed = false;
     }
-
-
-    //Checks phone input
     if (validatePhone(phoneValue)) {
         phoneError.style.display = "none";
     } else {
         phoneError.style.display = "block";
         validationPassed = false;
     }
-
-    //checks text area
     if (validateDetails(detailsValue)) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
         validationPassed = false;
     }
-
-    //Checks email input
     if (validateEmail(emailValue)) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
         validationPassed = false;
     }
-
-    //Alert if the form passed or not
     if (validationPassed) {
         var pMessage = document.getElementById("validation-passed-message");
         document.getElementById("validation-passed-message").style.display =
@@ -139,23 +129,14 @@ function toggle() {
         moreInfoBox.style.display = "none";
     }
 }
-
-
 //Back to top button
 document.getElementById("topButton").addEventListener("click", topButtonFunction);
 
 function topButtonFunction() {
-    var body = document.body;
-    var html = document.documentElement;
+    let body = document.body;
+    let html = document.documentElement;
     body.scrollTop = 0;
     html.scrollTop = 0;
 }
 
-//Menu for media queries
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
 
