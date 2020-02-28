@@ -1,11 +1,10 @@
 //Menu for media queries
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
+toggleButton.addEventListener("click", function () {
+    navbarLinks.classList.toggle("active");
 })
-
 //filter and display images
 var images = [
     {
@@ -53,8 +52,6 @@ var images = [
 
 ];
 
-
-//display images 
 var filteredImages = images;
 
 var imageContainer = document.querySelector("#gallery");
@@ -75,19 +72,16 @@ function renderImages() {
 
         imageContainer.innerHTML += `
         <div class="columnGallery">
-        <img onclick="displayImage(this);" alt="Column pictures of rockets, austronauts and shooting stars" class="image-picture" src="${imageSrc}"</img>
+        <img onclick="displayImage(this);" alt="${image.alt}" class="image-picture" src="${imageSrc}"</img>
         <h2 class="image-name">${image.title}</h2>
         <p class="alt" >${image.alt}</p>
         </div>`;
     });
 }
 
-
 renderImages();
 
-
-
-//filter type 
+//filter
 function filterImages(type) {
     filteredImages = images.filter(function (image) {
         if (type === "all") {
@@ -104,7 +98,7 @@ function filterImages(type) {
     renderImages();
 
 }
-// Add active class to the current button
+// Add active class to filter buttons
 var btnContainer = document.getElementById("galleryBtnContainer");
 var btns = btnContainer.getElementsByClassName("btnGallery");
 
@@ -131,10 +125,11 @@ function displayImage(image) {
 document.getElementById("topButton").addEventListener("click", topButtonFunction);
 
 function topButtonFunction() {
-    var body = document.body;
-    var html = document.documentElement;
+    let body = document.body;
+    let html = document.documentElement;
     body.scrollTop = 0;
     html.scrollTop = 0;
 }
+
 
 

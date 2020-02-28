@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Space Events with live rocket launches, gallery and a timeline. Find out more!" />
+    <meta name="description" content="Space Events with live rocket launches, gallery and a schedule. Find out more!" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css" />
     <title>Space Events Homepage</title>
@@ -16,7 +16,8 @@
 
         <nav class="navbar" id="navbar">
 
-            <a href="index.html"><img class="brand-title" src="images/logohdpi.png" alt="company logo space events"></a>
+            <a class="brand-title-a" href="index.html"><img class="brand-title" src="images/logohdpi.png"
+                    alt="company logo space events"></a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -45,10 +46,10 @@
     <div class="eventsRow">
 
         <section class="videoContainer">
-            <h1>Space events</h1>
+            <h1 class="headings">Space events</h1>
 
 
-            <h2 class="videoHeading">Starlink Mission</h2>
+            <h2 class="headings">Starlink Mission</h2>
             <button id="button" class="contentVideo">Watch live feed</button>
 
             <div id="contentIndex">
@@ -56,37 +57,39 @@
                     src="https://www.youtube.com/embed/1KmBDCiL7MU" style="border:0;"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <div id="mission">
-                </div>
+            </div>
+            <div class="mission" id="mission">
+            </div>
 
-                <article>
-                    <h3>Need help?</h3>
+            <article>
+                <h3>Need help?</h3>
 
-                    <p class="questionInfo">Space activity experts at your service!</p>
+                <p>Space activity experts at your service!</p>
 
-                    <img class="roundPicture" src="images/space-working.jpg" alt="Man working in space">
+                <img class="roundPicture" src="images/space-working.jpg" alt="Man working in space">
 
-                    <img class="iconGuide" src="images/1x/guide.png" alt="Icon of a hand holding a book">
-                    <p class="iconText">Ask us anything</p>
+                <img class="iconGuide" src="images/1x/guide.png" alt="Icon of a hand holding a book">
+                <p class="iconText">Ask us anything</p>
 
-                    <img class="iconRocket" src="images/1x/rocket.png" alt="Icon of a rocket">
-                    <p class="iconText">Educated Experts</p>
+                <img class="iconRocket" src="images/1x/rocket.png" alt="Icon of a rocket">
+                <p class="iconText">Educated Experts</p>
 
-                    <img class="iconBook" src="images/1x/book.png" alt="Icon of a book">
-                    <p class="iconText">Learn about space activity</p>
+                <img class="iconBook" src="images/1x/book.png" alt="Icon of a book">
+                <p class="iconText">Learn about space activity</p>
 
-                    <img class="icon24" src="images/1x/247.png" alt="Icon of 24/7 sign">
-                    <p class="iconText">Reach us 24/7</p>
+                <img class="icon24" src="images/1x/247.png" alt="Icon of 24/7 sign">
+                <p class="iconText">Reach us 24/7</p>
 
-                </article>
-                <form action="contact.html">
-                    <button class="contactBottom">Contact us</button>
-                </form>
+            </article>
+
+            <form action="contact.html">
+                <button class="contactBottom">Contact us</button>
+            </form>
         </section>
 
-        <section class="col">
+        <div class="col">
             <article>
-                <h3 class="colHeading">Anyone up there?</h3>
+                <h2 class="colHeading">Anyone up there?</h2>
                 <div class="astros" id="astros">
 
                 </div>
@@ -95,20 +98,23 @@
 
                 </div>
 
-                <h3 class="colHeading">Previous missions</h3>
+                <h2 class="colHeading">Previous missions</h2>
 
-                <h3 class="locationHeading">Delta 4 launch</h3>
+                <h3 class="colHeading3">Delta 4 launch</h3>
                 <p>The final Delta 4 Medium rocket lifts off from Cape Canaveral Air Force Station on August 22, 2019
                 </p>
 
                 <img class="columnImg" src="images/delta.jpg" alt="Delta 4 rocket launch">
 
-                <h3 class="locationHeading">Ariane 5</h3>
+                <h3 class="colHeading3">Ariane 5</h3>
                 <p>A European Ariane 5 rocket fired into a gloomy sky, Thursday over French Guiana and streaked into
                     the sky.</p>
+
+                <a href="event.html"><span class="linkContact">Find out more!</span></a>
+
                 <img class="columnImg" src="images/ariane.jpg" alt="Ariane rocket launch">
             </article>
-        </section>
+        </div>
 
     </div>
 
